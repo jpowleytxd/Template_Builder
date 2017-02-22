@@ -9,6 +9,10 @@ body{
   background: rgb(50, 50, 50);
 }
 
+.clearfix{
+  clear: both;
+}
+
 #feedback-bar{
   width: 100%;
   height: 50px;
@@ -491,7 +495,7 @@ footer{
 
 .body-view-outer{
   width: 85%;
-  min-height: 100vh;
+  min-height: calc(100vh - 100px);
   display: block;
   position: relative;
   float: right;
@@ -593,7 +597,7 @@ footer{
 /*----------------*/
 .dashboard-fullpage{
   width: 100%;
-  min-height: calc(100vh - 110px);
+  min-height: calc(100vh - 100px);
   display: block;
   position: relative;
   background: #fff;
@@ -604,7 +608,7 @@ footer{
 /*----------------*/
 .template-setup-fullpage{
   width: 100%;
-  min-height: calc(100vh - 110px);
+  min-height: calc(100vh - 100px);
   display: block;
   position: relative;
   background: #fff;
@@ -615,8 +619,302 @@ footer{
 /*----------------*/
 .new-style-fullpage{
   width: 100%;
-  min-height: calc(100vh - 110px);
+  /*min-height: calc(100vh - 100px);*/
   display: block;
   position: relative;
   background: #fff;
+}
+
+.initial-setup-outer{
+  width: 85%;
+  min-height: calc(100vh - 100px);
+  display: block;
+  position: relative;
+  float: right;
+  padding: 15px;
+  padding-bottom: 60px;
+  background: rgb(225, 225, 225);
+}
+
+.initial-setup-inner{
+  width: 100%;
+  min-height: calc(100vh - 175px);
+  display: block;
+  position: relative;
+  float: left;
+  padding: 20px;
+  background: #f5f5f5;
+}
+
+.setup-title{
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  float: left;
+  margin-bottom: 20px;
+  color: rgb(50, 50, 50);
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+form#setup-form{
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+form#setup-form .form-col{
+  width: 33.3%;
+  min-height: calc(100vh - 258px);
+  display: block;
+  position: relative;
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.form-col .form-col-title{
+  width: 100%;
+  height: 25px;
+  display: block;
+  position: relative;
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: rgb(50, 50, 50);
+  font-size: 18px;
+  text-align: center;
+  text-decoration: underline;
+  user-select: none;
+}
+
+.input-group{
+  width: 100%;
+  display: block;
+  position: relative;
+  float: left;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.input-group label{
+  width: 49%;
+  display: block;
+  position: relative;
+  float: left;
+  color: rgb(50, 50, 50);
+  font-size: 14px;
+  text-align: right;
+  user-select: none;
+}
+
+.input-group input, .input-group select{
+  width: 49%;
+  height: 25px;
+  display: block;
+  position: relative;
+  float: right;
+  user-select: none;
+  border: 1px solid rgb(50, 50, 50);
+}
+
+.form-col#preview-area{
+  min-height: 0px !important;
+  background: grey;
+  padding: 0 !important;
+}
+
+/*----------------*/
+/*Setup Page Preview*/
+/*----------------*/
+
+.preview-outer{
+  width: 100%;
+  display: block;
+  position: relative;
+  float: left;
+  background: rgb(150, 150, 150);
+}
+
+.preview-header{
+  width: 100%;
+  height: 50px;
+  display: block;
+  position: relative;
+  float: left;
+  background: rgb(50, 50, 50);
+}
+
+.preview-logo{
+  max-width: 20%;
+  height: auto;
+  display: block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left:auto;
+  margin-right: auto;
+}
+
+.preview-navigation{
+  width: 100%;
+  height: 30px;
+  display: block;
+  position: relative;
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: rgb(50, 50, 50);
+}
+
+.preview-navigation-link{
+  width: 20%;
+  height: 30px;
+  display: block;
+  position: relative;
+  float: left;
+  color: #3eb978;
+  font-size: 12px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.preview-content{
+  width: 90%;
+  height: auto;
+  display: block;
+  position: relative;
+  float: left;
+  margin-top: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 10px;
+  background: #f5f5f5;
+}
+
+.preview-hero{
+  max-width: 100%;
+  display: block;
+  position: relative;
+  float: left;
+}
+
+.preview-title{
+  width: 100%;
+  display: block;
+  position: relative;
+  float: left;
+  margin-top: 10px;
+  color: rgb(50, 50, 50);
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.preview-text{
+  width: 100%;
+  display: block;
+  position: relative;
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: rgb(50, 50, 50);
+  font-size: 14px;
+}
+
+.preview-body-link{
+  color: #3eb978;
+  text-decoration: underline;
+}
+
+.preview-line-break-outer{
+  width: 100%;
+  height: 30px;
+  display: block;
+  position: relative;
+  float: left;
+}
+
+.preview-line-break{
+  width: 100%;
+  height: 12px;
+  display: block;
+  position: relative;
+  float: left;
+  border-bottom-color: rgb(50, 50, 50);
+  border-bottom-style: dashed;
+  border-bottom-width: 1px;
+}
+
+.preview-footer{
+  width: 100%;
+  display: block;
+  position: relative;
+  float: left;
+  background: rgb(50, 50, 50);
+}
+
+.preview-social-outer{
+  max-width: 99px;
+  height: 30px;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.preview-social{
+  max-width: 20px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 15px;
+  border: 0;
+}
+
+.preview-footer-text{
+  width: 60%;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #f5f5f5;
+  font-size: 14px;
+  text-align: center;
+}
+
+.preview-view-online{
+  width: 60%;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #3eb978;
+  font-size: 14px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.preview-unsubscribe{
+  width: 60%;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #3eb978;
+  font-size: 14px;
+  text-decoration: underline;
+  text-align: center;
 }

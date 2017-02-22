@@ -30,11 +30,29 @@ $page = $page . '-page';
 
 <section class="new-style-fullpage">
   <?php include('../partials/_template_setup_nav.php') ?>
-  <div class="">
-
+  <div class="initial-setup-outer">
+    <div class="initial-setup-inner">
+      <div class="setup-title">Quick Preview</div>
+      <form id="setup-form" method="POST">
+        <div class="form-col">
+          <?php include('/input_sections/_theme_settings_input.php') ?>
+          <?php include('/input_sections/_main_text_settings_input.php') ?>
+          <?php include('/input_sections/_footer_text_settings_input.php') ?>
+          <?php include('/input_sections/_social_input.php') ?>
+        </div>
+        <div class="form-col" id="preview-area">
+          <?php include('/input_sections/_preview.php') ?>
+        </div>
+        <div class="form-col">
+          <?php include('/input_sections/_navigation_links_input.php') ?>
+          <?php include('/input_sections/_image_settings_input.php') ?>
+          <?php include('/input_sections/_voucher_settings_input.php') ?>
+        </div>
+      </form>
+    </div>
   </div>
 </section>
 
-<?php include('../partials/_footer.php') ?>
+<!-- <?php include('../partials/_footer.php') ?> -->
 
 </body>
