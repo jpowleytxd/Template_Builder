@@ -23,7 +23,7 @@ $page = $page . '-page';
 
   <title>Template Builder</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/main.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -60,7 +60,7 @@ $page = $page . '-page';
   <div class="password-popup-outer">
     <div class="password-popup-inner">
       <div class="password-popup-close">X</div>
-      <span class="password-heading">Forgotten Your Password</span>
+      <span class="password-heading">Password Reset:</span>
       <p>Enter your username into the box below. Your password will be sent to the email address registered on the system.</p>
       <form class="password-form" name="password-form" id="password-form">
         <div class="password-field">
