@@ -3,11 +3,21 @@
     <img src="http://placehold.it/60x30" class="preview-logo">
   </div>
   <div class="preview-navigation">
-    <div class="preview-navigation-link" id="nav-link-1">Link</div>
-    <div class="preview-navigation-link" id="nav-link-2">Link</div>
-    <div class="preview-navigation-link" id="nav-link-3">Link</div>
-    <div class="preview-navigation-link" id="nav-link-4">Link</div>
-    <div class="preview-navigation-link" id="nav-link-5">Link</div>
+    <div class="preview-navigation-link nav-link-1">
+      <a href="#" class="nav-link-hyper-1 preview-underlined-link" target="_blank">Link</a>
+    </div>
+    <div class="preview-navigation-link nav-link-2">
+      <a href="#" class="nav-link-hyper-2 preview-underlined-link" target="_blank">Link</a>
+    </div>
+    <div class="preview-navigation-link nav-link-3">
+      <a href="#" class="nav-link-hyper-3 preview-underlined-link" target="_blank">Link</a>
+    </div>
+    <div class="preview-navigation-link nav-link-4">
+      <a href="#" class="nav-link-hyper-4 preview-underlined-link" target="_blank">Link</a>
+    </div>
+    <div class="preview-navigation-link nav-link-5">
+      <a href="#" class="nav-link-hyper-5 preview-underlined-link" target="_blank">Link</a>
+    </div>
   </div>
   <div class="preview-content">
     <img src="http://placehold.it/800x400" class="preview-hero">
@@ -25,7 +35,22 @@
       Sample text for template body.
     </div>
     <div class="preview-voucher-outer">
-
+      <div class="preview-voucher-left">
+        <div class="preview-voucher-text">
+          Preview Voucher Text
+        </div>
+        <div class="preview-voucher-code">
+          VoucherCode
+        </div>
+        <div class="preview-voucher-text">
+          Preview Voucher Text
+        </div>
+      </div>
+      <div class="preview-voucher-right">
+        <div class="preview-voucher-instructions">
+          Preview Voucher Instructions
+        </div>
+      </div>
     </div>
   </div>
   <div class="preview-footer">
@@ -37,10 +62,10 @@
     <div class="preview-footer-text">
       Sample text for template footer.
     </div>
-    <div class="preview-view-online">
+    <div class="preview-view-online preview-underlined-link">
       View Online
     </div>
-    <div class="preview-unsubscribe">
+    <div class="preview-unsubscribe preview-underlined-link">
       Unsubscribe
     </div>
   </div>
