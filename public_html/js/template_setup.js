@@ -9,6 +9,19 @@ $(document).ready(function(){
     }
   });
 
+  $('input').on('keyup', function(event){
+    var inputObject  = $(this);
+    var parentObject = $(this).parent('.input-group');
+
+    var input = inputObject.val();
+    var validationType = parentObject.data('valid');
+
+    var validInput = validation(input, validationType);
+
+    console.log(validInput);
+  });
+
+
   $('.input-group').on('click', function(event){
     var target = $(this).data('preview');
     var input = $.trim($(this).children('input').val());
@@ -36,9 +49,9 @@ $(document).ready(function(){
     // }
 
     if(validationTest === true){
-      alert(input);
+      // alert(input);
     } else{
-      alert('not-valid');
+      // alert('not-valid');
     }
   });
 
@@ -61,10 +74,18 @@ function validation(input, type){
 function validateColor(color){
   color = color.replace('#', '');
   if(color.length <= 6){
-    if(color.match(/([0-9A-Fa-f]{6})|([0-9A-Fa-f]{3})/)){
-      return true;
+    if(color.length <= 3){
+      if(color.match(/([0-9A-Fa-f]{3})/)){
+        return true;
+      } else{
+        return false;
+      }
     } else{
-      return false;
+      if(color.match(/([0-9A-Fa-f]{6})/)){
+        return true;
+      } else{
+        return false;
+      }
     }
   } else{
     return false;
