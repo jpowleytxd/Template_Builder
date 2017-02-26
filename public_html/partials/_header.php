@@ -24,6 +24,14 @@
     <div class="header-nav-button" id="template_setup-link">
       <span class="nav-symbol">#</span>
       <span class="nav-words">Setup</span>
+      <div class="header-nav-dropdown" id="setup-dropdown">
+        <div class="header-nav-link" id="new_style">
+          <span class="nav-words">New Style</span>
+        </div>
+        <div class="header-nav-link">
+          <span class="nav-words">Edit Style</span>
+        </div>
+      </div>
     </div>
     <div class="header-nav-button" id="dashboard-link">
       <span class="nav-symbol">%</span>

@@ -4,19 +4,19 @@
   </div>
   <div class="preview-navigation">
     <div class="preview-navigation-link nav-link-1">
-      <a href="#" class="nav-link-hyper-1 preview-underlined-link" target="_blank">Link</a>
+      <a href="#" class="nav-link-hyper-1 preview-underlined-link preview-nav-link" target="_blank">Link</a>
     </div>
     <div class="preview-navigation-link nav-link-2">
-      <a href="#" class="nav-link-hyper-2 preview-underlined-link" target="_blank">Link</a>
+      <a href="#" class="nav-link-hyper-2 preview-underlined-link preview-nav-link" target="_blank">Link</a>
     </div>
     <div class="preview-navigation-link nav-link-3">
-      <a href="#" class="nav-link-hyper-3 preview-underlined-link" target="_blank">Link</a>
+      <a href="#" class="nav-link-hyper-3 preview-underlined-link preview-nav-link" target="_blank">Link</a>
     </div>
     <div class="preview-navigation-link nav-link-4">
-      <a href="#" class="nav-link-hyper-4 preview-underlined-link" target="_blank">Link</a>
+      <a href="#" class="nav-link-hyper-4 preview-underlined-link preview-nav-link" target="_blank">Link</a>
     </div>
     <div class="preview-navigation-link nav-link-5">
-      <a href="#" class="nav-link-hyper-5 preview-underlined-link" target="_blank">Link</a>
+      <a href="#" class="nav-link-hyper-5 preview-underlined-link preview-nav-link" target="_blank">Link</a>
     </div>
   </div>
   <div class="preview-content">

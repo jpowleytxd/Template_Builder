@@ -371,6 +371,10 @@ a.header-logo img{
   display: block;
 }
 
+.header-nav-button#template_setup-link:hover .header-nav-dropdown{
+  display: block;
+}
+
 .header-nav-button .header-nav-dropdown .header-nav-link{
   width: 100%;
   height: 100px;
@@ -626,7 +630,7 @@ footer{
 }
 
 .initial-setup-outer{
-  width: 85%;
+  width: 100%;
   min-height: calc(100vh - 100px);
   display: block;
   position: relative;
@@ -643,7 +647,6 @@ footer{
   position: relative;
   float: left;
   padding: 20px;
-  background: #f5f5f5;
 }
 
 .setup-title{
@@ -652,11 +655,13 @@ footer{
   display: block;
   position: relative;
   float: left;
-  margin-bottom: 20px;
+  padding: 10px;
+  margin-bottom: 10px;
   color: rgb(50, 50, 50);
   font-size: 20px;
   font-weight: bold;
   text-align: center;
+  background: #f5f5f5;
 }
 
 form#setup-form{
@@ -666,13 +671,17 @@ form#setup-form{
 }
 
 form#setup-form .form-col{
-  width: 33.3%;
+  width: 32.6%;
   min-height: calc(100vh - 258px);
   display: block;
   position: relative;
   float: left;
-  padding-left: 10px;
-  padding-right: 10px;
+  margin-right: 1%;
+}
+
+form#setup-form .form-col:last-child{
+  margin : 0 !important;
+  float: right !important;
 }
 
 .form-col .form-col-title{
@@ -681,13 +690,22 @@ form#setup-form .form-col{
   display: block;
   position: relative;
   float: left;
-  margin-top: 10px;
   margin-bottom: 10px;
   color: rgb(50, 50, 50);
   font-size: 18px;
   text-align: center;
   text-decoration: underline;
   user-select: none;
+}
+
+.input-section{
+  width: 100%;
+  display: block;
+  position: relative;
+  float: left;
+  margin-bottom: 10px;
+  padding: 15px;
+  background: #f5f5f5;
 }
 
 .input-group{
@@ -710,20 +728,55 @@ form#setup-form .form-col{
   user-select: none;
 }
 
+.input-group label span{
+  width: 25px;
+  height: 25px;
+  position: relative;
+  float: left;
+  margin-left: 50px;
+  margin-right: 10px;
+  color: rgb(150, 150, 150);
+  text-align: center;
+  line-height: 25px;
+}
+
+.input-group label span:hover{
+  color: rgb(50, 50, 50);
+  cursor: pointer;
+}
+
 .input-group input, .input-group select{
   width: 49%;
   height: 25px;
-  display: block;
+  display: inherit;
   position: relative;
   float: right;
   user-select: none;
   border: 1px solid rgb(50, 50, 50);
 }
 
+.input-group input[type="submit"]{
+  width: 49%;
+  height: 40px;
+  display: block;
+  position: relative;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  user-select: none;
+  color: #f5f5f5;
+  border: 0;
+  background: #3eb978;
+  cursor: pointer;
+}
+
 .form-col#preview-area{
   min-height: 0px !important;
-  background: grey;
   padding: 0 !important;
+}
+
+.add-nav-container{
+  display: none;
 }
 
 /*----------------*/
@@ -735,7 +788,8 @@ form#setup-form .form-col{
   display: block;
   position: relative;
   float: left;
-  background: rgb(150, 150, 150);
+  margin-bottom: 10px;
+  background: #969696;
   font-family: 'Raleway';
 }
 
@@ -745,7 +799,7 @@ form#setup-form .form-col{
   display: block;
   position: relative;
   float: left;
-  background: rgb(50, 50, 50);
+  background: #323232;
 }
 
 .preview-logo{
@@ -767,7 +821,7 @@ form#setup-form .form-col{
   float: left;
   padding-left: 10px;
   padding-right: 10px;
-  background: rgb(50, 50, 50);
+  background: #323232;
 }
 
 .preview-navigation-link{
@@ -783,7 +837,11 @@ form#setup-form .form-col{
 }
 
 [class^='nav-link-hyper-']{
-  color: #3eb978;
+  /*color: #3eb978;*/
+}
+
+.preview-nav-link{
+   color: #3eb978;
 }
 
 .preview-underlined-link{
@@ -816,7 +874,7 @@ form#setup-form .form-col{
   position: relative;
   float: left;
   margin-top: 10px;
-  color: rgb(50, 50, 50);
+  color: #323232;
   font-size: 18px;
   font-weight: 600;
   text-align: center;
@@ -831,7 +889,7 @@ form#setup-form .form-col{
   margin-bottom: 10px;
   padding-left: 20px;
   padding-right: 20px;
-  color: rgb(50, 50, 50);
+  color: #323232;
   font-size: 14px;
 }
 
@@ -854,7 +912,7 @@ form#setup-form .form-col{
   display: block;
   position: relative;
   float: left;
-  border-bottom-color: rgb(50, 50, 50);
+  border-bottom-color: #323232;
   border-bottom-style: dashed;
   border-bottom-width: 1px;
 }
@@ -865,7 +923,9 @@ form#setup-form .form-col{
   position: relative;
   float: left;
   margin: 20px;
-  border: 2px solid rgb(50, 50, 50);
+  border-width: 2px;
+  border-style: solid;
+  border-color: #323232;
 }
 
 .preview-voucher-left{
@@ -875,7 +935,7 @@ form#setup-form .form-col{
   position: relative;
   float: left;
   padding: 15px;
-  background: rgb(200, 200, 200);
+  background: #C8C8C8;
 }
 
 .preview-voucher-text{
@@ -885,7 +945,7 @@ form#setup-form .form-col{
   float: left;
   margin-top: 10px;
   margin-bottom: 10px;
-  color: rgb(50, 50, 50);
+  color: #323232;
   text-align: center;
   font-size: 14px;
 }
@@ -897,7 +957,7 @@ form#setup-form .form-col{
   float: left;
   margin-top: 10px;
   margin-bottom: 10px;
-  color: rgb(50, 50, 50);
+  color: #323232;
   text-align: center;
   font-size: 18px;
   font-weight: bold;
@@ -918,7 +978,7 @@ form#setup-form .form-col{
   display: block;
   position: relative;
   float: left;
-  color: rgb(50, 50, 50);
+  color: #323232;
   font-size: 14px;
   font-weight: normal;
   text-align: center;
@@ -930,7 +990,7 @@ form#setup-form .form-col{
   display: block;
   position: relative;
   float: left;
-  background: rgb(50, 50, 50);
+  background: #323232;
 }
 
 .preview-social-outer{
@@ -944,6 +1004,7 @@ form#setup-form .form-col{
 
 .preview-social{
   max-width: 20px;
+  display: inline;
   position: relative;
   top: 50%;
   transform: translateY(-50%);

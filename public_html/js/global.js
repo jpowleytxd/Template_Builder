@@ -33,4 +33,17 @@ $(document).ready(function(){
     var relocate = '/' + target + '/' + target + '.php'
     window.location.replace(relocate);
   });
+
+  $('.header-nav-link').on('click', function(event){
+    event.stopPropagation();
+
+    var parent = $(this).parent().parent('.header-nav-button');
+    var folder = parent.attr('id');
+    folder = folder.replace('-link', '');
+
+    var target = $(this).attr('id');
+    target = target.replace('-link', '');
+    var relocate = '/' + folder + '/' + target + '.php'
+    window.location.replace(relocate);
+  });
 });

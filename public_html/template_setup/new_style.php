@@ -29,7 +29,7 @@ $page = $page . '-page';
 <?php include('../partials/_header.php') ?>
 
 <section class="new-style-fullpage">
-  <?php include('../partials/_template_setup_nav.php') ?>
+  <?php //include('../partials/_template_setup_nav.php') ?>
   <div class="initial-setup-outer">
     <div class="initial-setup-inner">
       <div class="setup-title">Quick Preview</div>
@@ -42,6 +42,11 @@ $page = $page . '-page';
         </div>
         <div class="form-col" id="preview-area">
           <?php include('input_sections/_preview.php') ?>
+          <div class="input-section">
+            <div class="input-group">
+              <input type="submit" id="submit-settings">
+            </div>
+          </div>
         </div>
         <div class="form-col">
           <?php include('input_sections/_navigation_links_input.php') ?>
