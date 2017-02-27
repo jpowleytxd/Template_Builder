@@ -100,6 +100,8 @@ $(document).ready(function(){
 
     var input = inputObject.val();
 
+    console.log(input);
+
     var preview = parentObject.data('preview');
     preview = '.' + preview;
 
