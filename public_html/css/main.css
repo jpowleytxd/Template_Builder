@@ -790,7 +790,7 @@ form#setup-form .form-col:last-child{
   float: left;
   margin-bottom: 10px;
   background: #969696;
-  font-family: 'Raleway';
+  font-family: Arial, sans-serif;
 }
 
 .preview-header{

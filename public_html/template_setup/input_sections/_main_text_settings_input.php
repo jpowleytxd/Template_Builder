@@ -3,8 +3,18 @@
   <div class="input-group" data-preview="preview-outer" data-valid="selection" data-css="font-family" data-reset="Raleway">
     <label>Font Type:</label>
     <select id="font-family">
-      <option value="Arial, sans-serif" style="font-family: Arial, sans-serif;">Arial</option>
-      <option value="Helvetica, serif" style="font-family: Helvetica, serif;">Helvetica</option>
+      <?php
+        include('../processes/global.php');
+        //Get Fonts
+        $initialQuery = "SELECT * FROM `font_lookup` ORDER BY font_display_name ASC";
+        $rows = databaseQuery($initialQuery);
+        var_dump($rows);
+        foreach($rows as $key => $row){
+          print_r("<option value='{$row[1]}' style='font-family: {$row[1]};'>{$row[2]}</option>");
+        }
+       ?>
+      <!-- <option value="Arial, sans-serif" style="font-family: Arial, sans-serif;">Arial</option>
+      <option value="Helvetica, serif" style="font-family: Helvetica, serif;">Helvetica</option> -->
     </select>
   </div>
   <div class="input-group" data-preview="preview-nav-link" data-valid="color" data-css="color" data-reset="#3eb978">

@@ -49,6 +49,8 @@ $(document).ready(function(){
         target.css({
           'border-color' : input
         });
+      } else if(cssType === 'link'){
+        target.attr('href', input);
       }
     } else{
       var validationType = parentObject.data('valid');
@@ -89,6 +91,8 @@ $(document).ready(function(){
           target.css({
             'border-color' : input
           });
+        } else if(cssType === 'link'){
+          target.attr('href', input);
         }
       }
     }
@@ -116,6 +120,10 @@ $(document).ready(function(){
     } else if(cssType === 'font-weight'){
       target.css({
         'font-weight' : input
+      });
+    } else if(cssType === 'font-family'){
+      target.css({
+        'font-family' : input
       });
     }
   });
@@ -274,6 +282,8 @@ function validation(input, type){
     return validateColor(input);
   } else if((type === 'selection') || (type === 'number')){
     return true;
+  } else if(type === 'link'){
+    return validateLink(input);
   } else{
     return 'error';
   }
@@ -298,4 +308,31 @@ function validateColor(color){
   } else{
     return false;
   }
+}
+
+function validateLink(link){
+  if(link.match("^http://")){
+
+  } else if(link.match('^https://')){
+
+  } else{
+    link = 'http://' + link;
+  }
+
+  var valid = false;
+
+  $.ajax({
+    async: false,
+    method: "POST",
+    url: "../processes/validate_link.php",
+    data: {hyperLink : link},
+    beforeSend: function() {},
+    success: function(response) {
+      if ($.trim(response) == 'valid') {
+        valid = true;
+      }
+    }
+  });
+  console.log(valid);
+  return valid;
 }
