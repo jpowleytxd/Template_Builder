@@ -770,6 +770,14 @@ form#setup-form .form-col:last-child{
   cursor: pointer;
 }
 
+.input-disclaimer{
+  width: 100%;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
 .form-col#preview-area{
   min-height: 0px !important;
   padding: 0 !important;
@@ -994,7 +1002,7 @@ form#setup-form .form-col:last-child{
 }
 
 .preview-social-outer{
-  max-width: 99px;
+  width: 99px;
   height: 30px;
   display: block;
   position: relative;

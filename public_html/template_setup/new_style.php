@@ -44,6 +44,14 @@ $page = $page . '-page';
           <?php include('input_sections/_preview.php') ?>
           <div class="input-section">
             <div class="input-group">
+              <div class="input-disclaimer">
+                Template above is a basic guide and later options define what form the email
+                template shall take.
+              </div>
+            </div>
+          </div>
+          <div class="input-section">
+            <div class="input-group">
               <input type="submit" id="submit-settings">
             </div>
           </div>

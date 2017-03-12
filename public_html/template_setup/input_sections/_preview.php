@@ -1,6 +1,6 @@
 <div class="preview-outer">
   <div class="preview-header">
-    <img src="http://placehold.it/60x30" class="preview-logo">
+    <img src="http://placehold.it/60x30" class="preview-logo" alt="blank">
   </div>
   <div class="preview-navigation">
     <div class="preview-navigation-link nav-link-1">
@@ -20,11 +20,11 @@
     </div>
   </div>
   <div class="preview-content">
-    <img src="http://placehold.it/800x400" class="preview-hero">
+    <img src="http://placehold.it/600x300" class="preview-hero" alt="blank">
     <div class="preview-title">Email Title</div>
     <div class="preview-text">
       Sample text for template body.
-      <span class="preview-body-link">
+      <span class="preview-body-link preview-underlined-link">
         Email Link
       </span>
     </div>
