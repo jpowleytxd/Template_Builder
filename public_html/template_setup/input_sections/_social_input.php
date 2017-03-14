@@ -12,7 +12,7 @@
     <label>Instagram:</label>
     <input type="checkbox" class="checked" id="instagram_link" checked>
   </div>
-  <div class="input-group" data-preview="preview-social" data-valid="selection" data-css="font-family" data-reset="light">
+  <div class="input-group" data-preview="preview-social" data-valid="selection" data-css="logo-color" data-reset="light">
     <label>Logo Colour:</label>
     <select id="logo_color">
       <option value="light">light</option>

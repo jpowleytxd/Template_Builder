@@ -141,6 +141,28 @@ $(document).ready(function(){
       target.css({
         'font-family' : input
       });
+    } else if(cssType === 'logo-color'){
+      if(input == 'light'){
+        $.each(target, function(key, value) {
+          if($(value).hasClass('preview-facebook')){
+            $(value).attr('src', 'http://img2.email2inbox.co.uk/social/facebook-light.png');
+          } else if($(value).hasClass('preview-twitter')){
+            $(value).attr('src', 'http://img2.email2inbox.co.uk/social/twitter-light.png');
+          } else if($(value).hasClass('preview-instagram')){
+            $(value).attr('src', 'http://img2.email2inbox.co.uk/social/instagram-light.png');
+          }
+        });
+      } else if(input === 'dark'){
+        $.each(target, function(key, value) {
+          if($(value).hasClass('preview-facebook')){
+            $(value).attr('src', 'http://img2.email2inbox.co.uk/social/facebook-dark.png');
+          } else if($(value).hasClass('preview-twitter')){
+            $(value).attr('src', 'http://img2.email2inbox.co.uk/social/twitter-dark.png');
+          } else if($(value).hasClass('preview-instagram')){
+            $(value).attr('src', 'http://img2.email2inbox.co.uk/social/instagram-dark.png');
+          }
+        });
+      }
     }
   });
 

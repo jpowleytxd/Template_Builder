@@ -1008,6 +1008,7 @@ form#setup-form .form-col:last-child{
   position: relative;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 10px;
 }
 
 .preview-social{
@@ -1018,7 +1019,7 @@ form#setup-form .form-col:last-child{
   transform: translateY(-50%);
   margin-left: 5px;
   margin-right: 5px;
-  margin-bottom: 15px;
+  vertical-align: center;
   border: 0;
 }
 

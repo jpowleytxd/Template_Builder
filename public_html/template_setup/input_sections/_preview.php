@@ -55,9 +55,9 @@
   </div>
   <div class="preview-footer">
     <div class="preview-social-outer">
-      <img src="http://placehold.it/20x20" class="preview-facebook preview-social">
-      <img src="http://placehold.it/20x20" class="preview-twitter preview-social">
-      <img src="http://placehold.it/20x20" class="preview-instagram preview-social">
+      <img src="http://img2.email2inbox.co.uk/social/facebook-light.png" class="preview-facebook preview-social">
+      <img src="http://img2.email2inbox.co.uk/social/twitter-light.png" class="preview-twitter preview-social">
+      <img src="http://img2.email2inbox.co.uk/social/instagram-light.png" class="preview-instagram preview-social">
     </div>
     <div class="preview-footer-text">
       Sample text for template footer.
